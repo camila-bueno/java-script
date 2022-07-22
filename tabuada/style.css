@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(56, 196, 98);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+div > p {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+div > p > input {
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+section {
+    background-color: white;
+    width: 500px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.411);
+}
+
+select > option {
+    font-size: 3em;
+    color: rgb(226, 13, 13);
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculo do IMC</h1>
+
+    <div>
+        <p>
+            Digite seu peso: <input type="number" name="txtpeso" id="txtpeso">
+        </p>
+    </div>
+    <div>
+        <p>
+            Digite sua altura: <input type="number" name="txtaltura" id="txtaltura">
+        </p>
+        <p> <input type="button" value="Verificar" onclick="verificar()"></p>
+    </div>
+    
+    <script>
+        function verificar(){
+        var txtp = document.getElementById('txtpeso')
+        var txta = document.getElementById('txtaltura')
+        var p = Number(txtp.value)
+        var a = Number(txta.value)
+        var imc = p / (a*a)
+
+    
+            if (imc >= 18.5 && imc <= 25) {
+                window.alert(`Seu imc é: ${imc.toFixed(2)}. Peso ideal`)
+            } else if (imc < 18.5){
+                window.alert(`Seu imc é: ${imc.toFixed(2)}. Abaixo do peso`)
+            } else if (imc > 25) {
+                window.alert(`Seu imc é: ${imc.toFixed(2)}. Sobrepeso`)
+            }
+        }
+
+    </script>
+</body>
+</html>
